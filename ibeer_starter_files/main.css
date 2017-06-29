@@ -35,8 +35,9 @@ img{
 .wrapper{
     width: 1000px;
     display: flex;
-    flex-direction: column;
     padding: 0 5% 0 5%;
+    flex-wrap: wrap;
+    justify-content: center;
 
     /*
         TODO:
@@ -46,8 +47,7 @@ img{
     */
 }
 #site-header{
-    display: flex;
-    flex-direction: column;
+    flex-grow: 1;
     /*
 
         TODO
@@ -83,6 +83,7 @@ img{
     color: white;
     bottom: 20px;
     text-shadow: 0 5px 8px rgba( 0, 0, 0, 0.3 );
+    font-family: 'Dancing Script';
     /*
         TODO:
         - Use the script font: 'Dancing Script' fot this text
@@ -99,11 +100,12 @@ img{
     */
 }
 #main-navigation a{
-    display: block;
+    display: flex;
     color: white;
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px 20px;
+    align-items: center;
 
 
     /*
@@ -125,15 +127,11 @@ main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    display: flex;
-    flex-direction: column;
     /*align-content: left;
     flex-grow: 0;*/
-    float: left;
-    top: -80px;
     width: 50%;
     position: relative;
-    left: 80px;
+    bottom: 50px;
 
 }
 
@@ -141,16 +139,9 @@ aside{
     padding: 20px;
     background-color: #eee;
     box-shadow: 5px 5px 8px rgba( 0, 0, 0, 0.3 );
-    width: 22%;
-    padding-bottom: 68%;
+    width: 30%;
     position: relative;
-    float: right;
-    margin-left: 0;
-    top: -2148px;
-    right: -620px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    bottom: 50px;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
