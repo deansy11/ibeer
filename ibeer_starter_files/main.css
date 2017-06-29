@@ -52,16 +52,18 @@ img{
     text-align: center;
     padding: 60px 0 120px 0;
     font-size: 4em;
-
+    background-image: url("header-img.jpg");
+    background-size: cover;
+    background-position: right bottom;
     /*
         TODO:
         - Add a background image "header-img.jpg"
         make sure that the path to the image is correct
     */
 
-    background-size: cover;
-    background-position: right bottom;
+
 }
+
 #site-header div h1,
 #site-header div h3{
     margin: 0;
@@ -82,6 +84,7 @@ img{
 }
 #main-navigation{
     background: #444;
+    display: flex;
 
     /*
         TODO:
@@ -113,6 +116,11 @@ main{
     padding: 20px;
     background-color: #444;
     box-shadow: -5px 5px 8px rgba( 0, 0, 0, 0.3 );
+    display: flex;
+    flex-direction: column;
+    align-content: left;
+    flex-grow: 0;
+    flex-basis: 30%;
     /*
         TODO:
         - Flexbox: Set the starting width of this element
